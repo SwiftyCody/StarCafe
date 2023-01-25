@@ -7,20 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E5948BA2980820E00EF81A8 /* CoffeeMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5948B92980820E00EF81A8 /* CoffeeMenu.swift */; };
+		0E5948BC29813FE500EF81A8 /* EventSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5948BB29813FE500EF81A8 /* EventSectionView.swift */; };
+		0E5948BE2981401700EF81A8 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5948BD2981401700EF81A8 /* Event.swift */; };
 		0E5EA2602974A36B004D3285 /* StarCafeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5EA25F2974A36B004D3285 /* StarCafeApp.swift */; };
 		0E5EA2622974A36B004D3285 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5EA2612974A36B004D3285 /* MainTabView.swift */; };
 		0E5EA2642974A36C004D3285 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E5EA2632974A36C004D3285 /* Assets.xcassets */; };
 		0E5EA2672974A36C004D3285 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E5EA2662974A36C004D3285 /* Preview Assets.xcassets */; };
 		0E5EA26E2975EF41004D3285 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5EA26D2975EF41004D3285 /* Tab.swift */; };
+		0E5EA2732979E8B7004D3285 /* MenuSuggestionSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5EA2722979E8B7004D3285 /* MenuSuggestionSectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E5948B92980820E00EF81A8 /* CoffeeMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeMenu.swift; sourceTree = "<group>"; };
+		0E5948BB29813FE500EF81A8 /* EventSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventSectionView.swift; sourceTree = "<group>"; };
+		0E5948BD2981401700EF81A8 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		0E5EA25C2974A36B004D3285 /* StarCafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarCafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E5EA25F2974A36B004D3285 /* StarCafeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarCafeApp.swift; sourceTree = "<group>"; };
 		0E5EA2612974A36B004D3285 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		0E5EA2632974A36C004D3285 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E5EA2662974A36C004D3285 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0E5EA26D2975EF41004D3285 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		0E5EA2722979E8B7004D3285 /* MenuSuggestionSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSuggestionSectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +62,9 @@
 			isa = PBXGroup;
 			children = (
 				0E5EA25F2974A36B004D3285 /* StarCafeApp.swift */,
-				0E5EA2612974A36B004D3285 /* MainTabView.swift */,
-				0E5EA26D2975EF41004D3285 /* Tab.swift */,
+				0E5948B92980820E00EF81A8 /* CoffeeMenu.swift */,
+				0E5948BD2981401700EF81A8 /* Event.swift */,
+				0E5EA2702979E857004D3285 /* Scenes */,
 				0E5EA2632974A36C004D3285 /* Assets.xcassets */,
 				0E5EA2652974A36C004D3285 /* Preview Content */,
 			);
@@ -68,6 +77,33 @@
 				0E5EA2662974A36C004D3285 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0E5EA26F2979E842004D3285 /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				0E5EA2612974A36B004D3285 /* MainTabView.swift */,
+				0E5EA26D2975EF41004D3285 /* Tab.swift */,
+			);
+			path = Tab;
+			sourceTree = "<group>";
+		};
+		0E5EA2702979E857004D3285 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				0E5EA2712979E879004D3285 /* MenuSuggestionSectionView */,
+				0E5EA26F2979E842004D3285 /* Tab */,
+				0E5948BB29813FE500EF81A8 /* EventSectionView.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		0E5EA2712979E879004D3285 /* MenuSuggestionSectionView */ = {
+			isa = PBXGroup;
+			children = (
+				0E5EA2722979E8B7004D3285 /* MenuSuggestionSectionView.swift */,
+			);
+			path = MenuSuggestionSectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +177,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E5EA26E2975EF41004D3285 /* Tab.swift in Sources */,
+				0E5948BC29813FE500EF81A8 /* EventSectionView.swift in Sources */,
 				0E5EA2622974A36B004D3285 /* MainTabView.swift in Sources */,
+				0E5948BA2980820E00EF81A8 /* CoffeeMenu.swift in Sources */,
 				0E5EA2602974A36B004D3285 /* StarCafeApp.swift in Sources */,
+				0E5948BE2981401700EF81A8 /* Event.swift in Sources */,
+				0E5EA2732979E8B7004D3285 /* MenuSuggestionSectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
