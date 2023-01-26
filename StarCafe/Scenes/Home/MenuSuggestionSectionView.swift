@@ -10,14 +10,22 @@ import SwiftUI
 struct MenuSuggestionSectionView: View {
     
     var body: some View {
-        ScrollView(.vertical, showsIndicators: false) {
-            ScrollView(.horizontal, showsIndicators: false) {
-                LazyHStack {
-                    ForEach(CoffeeMenu.sample) { menu in
-                        VStack {
-                            MenuSuggestionItemView(coffeeMenu: menu)
+        VStack {
+            Text("\(User.shared.userName)님을 위한 추천메뉴")
+                .font(.headline)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.horizontal, 16)
+            
+            ScrollView(.vertical, showsIndicators: false) {
+                ScrollView(.horizontal, showsIndicators: false) {
+                    LazyHStack {
+                        ForEach(CoffeeMenu.sample) { menu in
+                            VStack {
+                                MenuSuggestionItemView(coffeeMenu: menu)
+                            }
                         }
                     }
+                    .padding(.horizontal, 16.0)
                 }
             }
         }
