@@ -2,7 +2,7 @@
 //  User.swift
 //  StarCafe
 //
-//  Created by solgoon on 2023/01/26.
+//  Created by Cody on 2023/01/26.
 //
 
 import Foundation

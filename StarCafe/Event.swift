@@ -2,7 +2,7 @@
 //  Event.swift
 //  StarCafe
 //
-//  Created by solgoon on 2023/01/25.
+//  Created by Cody on 2023/01/25.
 //
 
 import SwiftUI

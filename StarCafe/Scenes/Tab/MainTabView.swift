@@ -2,7 +2,7 @@
 //  MainTabView.swift
 //  StarCafe
 //
-//  Created by solgoon on 2023/01/16.
+//  Created by Cody on 2023/01/16.
 //
 
 import SwiftUI
@@ -15,7 +15,7 @@ struct MainTabView: View {
                     Tab.home.imageItem
                     Tab.home.textItem
                 }
-            Text("Other")
+            OtherView()
                 .tabItem {
                     Tab.other.imageItem
                     Tab.other.textItem

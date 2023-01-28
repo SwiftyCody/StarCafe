@@ -2,7 +2,7 @@
 //  StarCafeApp.swift
 //  StarCafe
 //
-//  Created by solgoon on 2023/01/16.
+//  Created by Cody on 2023/01/16.
 //
 
 import SwiftUI
