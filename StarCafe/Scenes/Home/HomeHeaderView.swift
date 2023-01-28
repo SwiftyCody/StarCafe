@@ -8,13 +8,17 @@
 import SwiftUI
 
 struct HomeHeaderView: View {
+    @Binding var isNeedToReload: Bool
+    
     var body: some View {
         VStack(spacing: 16) {
             HStack(alignment: .top) {
                 Text("\(User.shared.userName)님~\n반갑습니다!☕️")
                     .font(.largeTitle)
                     .frame(maxWidth: .infinity, alignment: .leading)
-                Button(action: { }, label: {
+                Button(action: {
+                    isNeedToReload = true
+                }, label: {
                     Image(systemName: "arrow.triangle.2.circlepath")
                 })
             }
@@ -49,6 +53,6 @@ struct HomeHeaderView: View {
 
 struct HomeHeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeHeaderView()
+        HomeHeaderView(isNeedToReload: .constant(false))
     }
 }

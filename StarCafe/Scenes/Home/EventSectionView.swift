@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct EventSectionView: View {
+    @Binding var events: [Event]
+    
     var body: some View {
         VStack {
             HStack {
@@ -26,7 +28,7 @@ struct EventSectionView: View {
             
             ScrollView(.horizontal, showsIndicators: true) {
                 LazyHStack(spacing: 16) {
-                    ForEach(Event.sample) { event in
+                    ForEach(events) { event in
                         EventSectionItemView(event: event)
                     }
                 }
@@ -59,6 +61,10 @@ struct EventSectionItemView: View {
 
 struct EventSectionView_Previews: PreviewProvider {
     static var previews: some View {
-        EventSectionView()
+        EventSectionView(events: .constant([
+            Event(image: Image("coffee"), title: "여름 한정 메뉴", description: "여름이니까 아이스커피~"),
+            Event(image: Image("coffee"), title: "겨울 한정 메뉴", description: "겨울이니까 커피~"),
+            Event(image: Image("coffee"), title: "제주도 한정 메뉴", description: "제주도 한정 메뉴 출시!")
+        ]))
     }
 }

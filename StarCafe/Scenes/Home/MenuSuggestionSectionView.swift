@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MenuSuggestionSectionView: View {
+    @Binding var coffeeMenu: [CoffeeMenu]
     
     var body: some View {
         VStack {
@@ -19,7 +20,7 @@ struct MenuSuggestionSectionView: View {
             ScrollView(.vertical, showsIndicators: false) {
                 ScrollView(.horizontal, showsIndicators: false) {
                     LazyHStack {
-                        ForEach(CoffeeMenu.sample) { menu in
+                        ForEach(coffeeMenu) { menu in
                             VStack {
                                 MenuSuggestionItemView(coffeeMenu: menu)
                             }
@@ -49,6 +50,14 @@ struct MenuSuggestionItemView: View {
 
 struct MenuSuggestionSectionView_Previews: PreviewProvider {
     static var previews: some View {
-        MenuSuggestionSectionView()
+        MenuSuggestionSectionView(coffeeMenu: .constant([
+            CoffeeMenu(image: Image("coffee"), name: "아메리카노"),
+            CoffeeMenu(image: Image("coffee"), name: "아이스 아메리카노"),
+            CoffeeMenu(image: Image("coffee"), name: "카페라떼"),
+            CoffeeMenu(image: Image("coffee"), name: "아이스 카페라떼"),
+            CoffeeMenu(image: Image("coffee"), name: "녹차라떼"),
+            CoffeeMenu(image: Image("coffee"), name: "카라멜 마키야또"),
+            CoffeeMenu(image: Image("coffee"), name: "플랫 화이트")
+        ]))
     }
 }
